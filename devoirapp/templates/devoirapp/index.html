@@ -1,0 +1,24 @@
+{% extends "devoirapp/base.html" %}
+
+{% block content %}
+<div class="content">
+  
+    <h1 class="text-center">Bienvenue à Notre Boulangerie</h1>
+    <div class="row">
+      {% for produits in produits_object %}
+      <div class="col-md-3">
+        <div class="card">
+          <img src="{{produits.image}}" alt="" class="card-ing-top" style="height: 300px;">
+          <div class="card-body">
+            <div id="aa{{ produits.id }}" class="card-title">{{ produits.titre }}</div>
+            <div id="prix{{ produits.id }}" style="color:orange" class="card-text">{{ produits.prix }}</div>
+            <a href="{{ produits.id}}" class="btn btn-warning">Voir</a>
+            <button id="{{ produits.id }}" class="btn ted btn-success">Ajouter</button>
+          </div>
+        </div>
+    </div>
+    {% endfor %}
+    </div>
+</div>
+
+{% endblock  %}

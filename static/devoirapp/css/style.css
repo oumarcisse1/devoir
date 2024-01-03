@@ -1,0 +1,35 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('DALL·E 2024-01-01 13.11.50 - A simple and elegant background image for a bakery product display page. The image should have a subtle and minimalist design, providing a neutral bac.png');
+            
+            background-size: cover;
+            color: #333;
+        }
+        .navbar {
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            color: #e4d9d9;
+        }
+        .content {
+            padding: 20px;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            color: #333;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            .navbar a {
+                display: block;
+                padding: 10px;
+            }
+        }
+   
